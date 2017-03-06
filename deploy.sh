@@ -2,7 +2,7 @@
 docker build -t kineticcookie/sample-node .
 docker push kineticcookie/sample-node
 
-ssh deploy@35.187.18.155 << EOF
+ssh d_dopeclouder@35.187.18.155 << EOF
 docker pull kineticcookie/sample-node:latest
 docker stop web || true
 docker rm web || true
