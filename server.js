@@ -1,12 +1,9 @@
 var config = require("./config");
-var db = require("knex")(config);
 var express = require("express");
 
 express()
  .get("*", function(req, res) {
-    db("users").then(function(data) {
-      res.send(data);
-    });
+	 res.send("Continuous integration and deployment lab finished");
  })
  .listen(80, function(err) {
     if (err) {
@@ -15,5 +12,6 @@ express()
     }
 
     console.log("Express Server listening on port 80");
+    console.log("Continuous integration and deployment lab finished");
   })
 ;
