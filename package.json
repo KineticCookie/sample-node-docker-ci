@@ -10,7 +10,7 @@
     "nodemon": "^1.9.1"
   },
   "scripts": {
-    "test": "echo \"Tests failure\" && exit 0"
+    "test": "echo \"Fail\" && exit 0"
   },
   "keywords": [],
   "author": "",
